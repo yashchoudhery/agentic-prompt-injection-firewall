@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+venv/
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Models
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
+models/**/*.safetensors
+models/**/*.onnx
+
+# Raw/processed datasets
+data/raw/*
+data/interim/*
+data/processed/*
+data/synthetic/*
+data/external/*
+
+# Keep folder placeholders
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/synthetic/.gitkeep
+!data/external/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+huggingface/
+hf_cache/

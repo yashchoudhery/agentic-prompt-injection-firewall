@@ -1,0 +1,59 @@
+{
+  "taxonomy_version": "1.0.0",
+
+  "attack_types": {
+    "A01": {
+      "name": "instruction_override",
+      "display_name": "Instruction Override",
+      "description": "Attempts to ignore, replace, override, or supersede previous trusted instructions."
+    },
+
+    "A02": {
+      "name": "role_change",
+      "display_name": "Role Change",
+      "description": "Attempts to change the AI agent's role, identity, authority, or operating mode."
+    },
+
+    "A03": {
+      "name": "secret_extraction",
+      "display_name": "Secret Extraction",
+      "description": "Attempts to obtain hidden prompts, private context, confidential data, system instructions, or other protected information."
+    },
+
+    "A04": {
+      "name": "tool_abuse",
+      "display_name": "Tool Abuse",
+      "description": "Attempts to cause the AI agent to invoke tools or actions that are unauthorized, irrelevant, or harmful."
+    },
+
+    "A05": {
+      "name": "credential_theft",
+      "display_name": "Credential Theft",
+      "description": "Attempts to obtain passwords, API keys, tokens, cookies, SSH keys, credentials, or authentication secrets."
+    },
+
+    "A06": {
+      "name": "context_poisoning",
+      "display_name": "Context Poisoning",
+      "description": "Attempts to inject false instructions, policies, memories, facts, or assumptions into the AI agent's working context or persistent memory."
+    },
+
+    "A07": {
+      "name": "multi_step_jailbreak",
+      "display_name": "Multi-Step Jailbreak",
+      "description": "An attack distributed across multiple messages, documents, tool calls, or reasoning steps whose combined effect compromises the agent."
+    },
+
+    "A08": {
+      "name": "encoded_instruction",
+      "display_name": "Encoded Instructions",
+      "description": "Malicious instructions hidden using encoding, obfuscation, Unicode tricks, Base64, ROT13, HTML comments, zero-width characters, or similar transformations."
+    },
+
+    "A09": {
+      "name": "indirect_prompt_injection",
+      "display_name": "Indirect Prompt Injection",
+      "description": "Malicious instructions embedded in external content such as webpages, emails, PDFs, retrieved documents, source code, API responses, OCR text, or tool outputs."
+    }
+  }
+}
