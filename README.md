@@ -6,7 +6,35 @@ The system combines a fine-tuned **DeBERTa-v3-small neural detector**, determini
 
 ---
 
-## Problem
+#
+# Demo Videos
+
+## Short Product Demo
+
+**Recommended for judges / hackathon submission**
+
+[▶ Watch the Short Prompt Protector Demo](https://drive.google.com/file/d/1PBTkI4s7CqMuoWNmKY3xrsm_R_iDB_yH/view?usp=drive_link)
+
+This demo presents the core Prompt Protector workflow, including:
+
+- benign input → `ALLOW`
+- direct prompt injection → `BLOCK`
+- benign external content → `ALLOW`
+- indirect prompt injection → `QUARANTINE`
+- safe tool call → `EXECUTION_ALLOWED`
+- sensitive-data exfiltration → `EXECUTION_BLOCKED`
+
+---
+
+## Detailed Technical Walkthrough
+
+[▶ Watch the Full Technical Walkthrough](https://drive.google.com/file/d/14m_JXNJxIoR7BeazJkJRmkAzm-jKQa4h/view?usp=drive_link)
+
+The detailed walkthrough covers the system architecture, neural and rule-based detectors, provenance-aware risk fusion, tool-security gateway, live API demonstrations, benchmark results, and D2 × F3 hackathon positioning.
+
+---
+
+# Problem
 
 Modern AI agents do more than generate text. They can:
 

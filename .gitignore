@@ -101,3 +101,6 @@ evaluation/data_quality/global_near_conflicts.jsonl
 
 # Temporary benchmark smoke tests
 evaluation/external/external_attack_benchmark_smoke_*.json
+
+# Local demo videos
+*.mp4
