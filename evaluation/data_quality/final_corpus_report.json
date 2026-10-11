@@ -1,0 +1,53 @@
+{
+  "raw_attack_records": 21187,
+  "raw_benign_records": 15103,
+  "attack_duplicate_groups": 163,
+  "attack_duplicate_rows_removed": 499,
+  "final_unique_attack_records": 20688,
+  "final_unique_benign_records": 15103,
+  "final_total_records": 35791,
+  "validation_ratio_requested": 0.15,
+  "train_records": 30426,
+  "validation_records": 5365,
+  "train_ratio_actual": 0.8501019809449303,
+  "validation_ratio_actual": 0.14989801905506972,
+  "train_label_counts": {
+    "attack": 17528,
+    "benign": 12898
+  },
+  "validation_label_counts": {
+    "attack": 3160,
+    "benign": 2205
+  },
+  "train_source_counts": {
+    "bipia_benign": 256,
+    "bipia_indirect": 1500,
+    "direct_attacks": 16028,
+    "dolly_hard_negative": 8,
+    "dolly_ordinary": 12634
+  },
+  "validation_source_counts": {
+    "bipia_benign": 39,
+    "bipia_indirect": 263,
+    "direct_attacks": 2897,
+    "dolly_hard_negative": 2,
+    "dolly_ordinary": 2164
+  },
+  "train_attack_type_counts": {
+    "indirect_prompt_injection": 1500,
+    "instruction_override": 14897,
+    "multi_step_jailbreak": 1086,
+    "secret_extraction": 2632
+  },
+  "validation_attack_type_counts": {
+    "indirect_prompt_injection": 263,
+    "instruction_override": 2692,
+    "multi_step_jailbreak": 183,
+    "secret_extraction": 468
+  },
+  "train_leakage_groups": 29058,
+  "validation_leakage_groups": 5123,
+  "group_overlap": 0,
+  "exact_normalized_text_overlap": 0,
+  "split_seed": "accenture-prompt-protector-v1"
+}

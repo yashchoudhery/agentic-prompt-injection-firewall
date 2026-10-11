@@ -1,0 +1,55 @@
+{
+  "attack_payloads": {
+    "text_train": 75,
+    "text_test": 75,
+    "code_train": 50,
+    "code_test": 50
+  },
+  "context_counts": {
+    "train": {
+      "email": 50,
+      "table": 900,
+      "code": 50
+    },
+    "test": {
+      "email": 50,
+      "table": 100,
+      "code": 50
+    }
+  },
+  "balanced_train_records": 1800,
+  "external_test_records": 41250,
+  "train_source_type_counts": {
+    "email": 675,
+    "source_code": 450,
+    "table": 675
+  },
+  "test_source_type_counts": {
+    "email": 11250,
+    "source_code": 7500,
+    "table": 22500
+  },
+  "train_position_counts": {
+    "end": 600,
+    "middle": 600,
+    "start": 600
+  },
+  "test_position_counts": {
+    "end": 13750,
+    "middle": 13750,
+    "start": 13750
+  },
+  "attack_types": [
+    "indirect_prompt_injection",
+    "instruction_override"
+  ],
+  "training_sampling": {
+    "contexts_per_attack_per_source": 3,
+    "positions": [
+      "start",
+      "middle",
+      "end"
+    ],
+    "random_seed": 2026
+  }
+}

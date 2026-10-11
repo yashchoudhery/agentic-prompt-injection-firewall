@@ -1,0 +1,77 @@
+{
+  "default_policy": "BLOCK",
+
+  "tools": {
+    "calculator": {
+      "calculate": "ALLOW"
+    },
+
+    "search": {
+      "search": "ALLOW"
+    },
+
+    "browser": {
+      "read": "ALLOW",
+      "navigate": "ALLOW",
+      "submit": "APPROVAL"
+    },
+
+    "email": {
+      "read": "ALLOW",
+      "draft": "ALLOW",
+      "send": "APPROVAL",
+      "delete": "APPROVAL"
+    },
+
+    "filesystem": {
+      "read": "ALLOW",
+      "write": "APPROVAL",
+      "delete": "APPROVAL"
+    },
+
+    "shell": {
+      "execute": "APPROVAL"
+    },
+
+    "memory": {
+      "read": "ALLOW",
+      "write": "APPROVAL",
+      "delete": "APPROVAL"
+    },
+
+    "database": {
+      "read": "ALLOW",
+      "write": "APPROVAL",
+      "update": "APPROVAL",
+      "delete": "APPROVAL"
+    }
+  },
+
+  "sensitive_argument_names": [
+    "password",
+    "passwd",
+    "api_key",
+    "apikey",
+    "access_token",
+    "refresh_token",
+    "secret",
+    "client_secret",
+    "private_key",
+    "credential",
+    "credentials",
+    "authorization"
+  ],
+
+  "side_effect_actions": [
+    "send",
+    "submit",
+    "write",
+    "update",
+    "delete",
+    "execute",
+    "publish",
+    "transfer",
+    "purchase",
+    "upload"
+  ]
+}

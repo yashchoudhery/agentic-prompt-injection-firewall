@@ -1,0 +1,39 @@
+{
+  "attack_records": 21187,
+  "benign_records": 15103,
+  "total_records": 36290,
+  "attack_source_counts": {
+    "bipia_indirect": 1800,
+    "direct_attacks": 19387
+  },
+  "benign_source_counts": {
+    "bipia_benign": 295,
+    "dolly_hard_negative": 10,
+    "dolly_ordinary": 14798
+  },
+  "attack_basic_duplicate_stats": {
+    "unique": 20688,
+    "duplicate_groups": 163,
+    "duplicate_rows": 499
+  },
+  "benign_basic_duplicate_stats": {
+    "unique": 15103,
+    "duplicate_groups": 0,
+    "duplicate_rows": 0
+  },
+  "attack_aggressive_duplicate_stats": {
+    "unique": 17750,
+    "duplicate_groups": 1775,
+    "duplicate_rows": 3436
+  },
+  "benign_aggressive_duplicate_stats": {
+    "unique": 15088,
+    "duplicate_groups": 14,
+    "duplicate_rows": 15
+  },
+  "exact_cross_label_normalized_keys": 0,
+  "exact_cross_label_pairs": 0,
+  "aggressive_cross_label_keys": 0,
+  "near_conflict_candidates_ge_0_92": 34,
+  "near_conflict_threshold": 0.92
+}

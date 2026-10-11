@@ -1,0 +1,105 @@
+{
+  "model_name": "microsoft/deberta-v3-small",
+  "max_length": 512,
+  "stride": 128,
+  "header_token_budget": 96,
+  "representation": "runtime_safe_provenance_v2",
+  "policy": {
+    "direct_user_message": "channel marker + raw content; do not use dataset user_instruction",
+    "external_content": "external-content marker + runtime user task + raw content",
+    "window_selection": "all overflow windows",
+    "bipia_window_labels": "positive only when selected window contains gold payload; non-payload windows become local negatives"
+  },
+  "train": {
+    "documents": 30426,
+    "document_labels": {
+      "benign": 12898,
+      "attack": 17528
+    },
+    "windows": 31711,
+    "local_window_labels": {
+      "benign": 13697,
+      "attack": 18014
+    },
+    "max_selected_windows_per_document": 43,
+    "window_source_counts": {
+      "bipia_benign": 286,
+      "bipia_indirect": 1686,
+      "direct_attacks": 16472,
+      "dolly_hard_negative": 8,
+      "dolly_ordinary": 13259
+    },
+    "window_source_local_labels": {
+      "bipia_benign": {
+        "benign": 286,
+        "attack": 0
+      },
+      "bipia_indirect": {
+        "benign": 144,
+        "attack": 1542
+      },
+      "direct_attacks": {
+        "benign": 0,
+        "attack": 16472
+      },
+      "dolly_hard_negative": {
+        "benign": 8,
+        "attack": 0
+      },
+      "dolly_ordinary": {
+        "benign": 13259,
+        "attack": 0
+      }
+    },
+    "bipia_attack_documents": 1500,
+    "bipia_attack_documents_covered": 1500,
+    "bipia_positive_windows": 1542,
+    "bipia_local_negative_windows": 144
+  },
+  "validation": {
+    "documents": 5365,
+    "document_labels": {
+      "benign": 2205,
+      "attack": 3160
+    },
+    "windows": 5628,
+    "local_window_labels": {
+      "benign": 2352,
+      "attack": 3276
+    },
+    "max_selected_windows_per_document": 43,
+    "window_source_counts": {
+      "bipia_benign": 41,
+      "bipia_indirect": 311,
+      "direct_attacks": 3001,
+      "dolly_hard_negative": 2,
+      "dolly_ordinary": 2273
+    },
+    "window_source_local_labels": {
+      "bipia_benign": {
+        "benign": 41,
+        "attack": 0
+      },
+      "bipia_indirect": {
+        "benign": 36,
+        "attack": 275
+      },
+      "direct_attacks": {
+        "benign": 0,
+        "attack": 3001
+      },
+      "dolly_hard_negative": {
+        "benign": 2,
+        "attack": 0
+      },
+      "dolly_ordinary": {
+        "benign": 2273,
+        "attack": 0
+      }
+    },
+    "bipia_attack_documents": 263,
+    "bipia_attack_documents_covered": 263,
+    "bipia_positive_windows": 275,
+    "bipia_local_negative_windows": 36
+  }
+}

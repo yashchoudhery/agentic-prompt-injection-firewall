@@ -1,0 +1,169 @@
+{
+  "model_name": "microsoft/deberta-v3-small",
+  "max_length": 512,
+  "header_token_budget": 96,
+  "stride": 128,
+  "selection_strategy": "all windows when <=3; otherwise first + middle + last",
+  "train": {
+    "split": "train",
+    "records": 30426,
+    "mean_windows_per_record": 1.0443370801288372,
+    "median_windows_per_record": 1.0,
+    "p95_windows_per_record": 1.0,
+    "max_windows_per_record": 44,
+    "multi_window_records": 743,
+    "records_using_three_views": 200,
+    "by_source": {
+      "bipia_benign": {
+        "records": 256,
+        "mean_windows": 1.1171875,
+        "median_windows": 1.0,
+        "p95_windows": 2.0,
+        "max_windows": 4,
+        "multi_window_records": 26
+      },
+      "bipia_indirect": {
+        "records": 1500,
+        "mean_windows": 1.118,
+        "median_windows": 1.0,
+        "p95_windows": 2.0,
+        "max_windows": 3,
+        "multi_window_records": 156
+      },
+      "direct_attacks": {
+        "records": 16028,
+        "mean_windows": 1.0284502121287746,
+        "median_windows": 1.0,
+        "p95_windows": 1.0,
+        "max_windows": 44,
+        "multi_window_records": 180
+      },
+      "dolly_hard_negative": {
+        "records": 8,
+        "mean_windows": 1.0,
+        "median_windows": 1.0,
+        "p95_windows": 1.0,
+        "max_windows": 1,
+        "multi_window_records": 0
+      },
+      "dolly_ordinary": {
+        "records": 12634,
+        "mean_windows": 1.0542979262308059,
+        "median_windows": 1.0,
+        "p95_windows": 1.0,
+        "max_windows": 19,
+        "multi_window_records": 381
+      }
+    },
+    "bipia_attack_records_with_payload": 1500,
+    "bipia_payload_all_window_hits": 1500,
+    "bipia_payload_all_window_coverage": 1.0,
+    "bipia_payload_three_window_hits": 1500,
+    "bipia_payload_three_window_coverage": 1.0,
+    "bipia_by_attack_position": {
+      "end": {
+        "total": 510,
+        "all_windows_hit": 510,
+        "all_windows_coverage": 1.0,
+        "three_windows_hit": 510,
+        "three_windows_coverage": 1.0
+      },
+      "middle": {
+        "total": 480,
+        "all_windows_hit": 480,
+        "all_windows_coverage": 1.0,
+        "three_windows_hit": 480,
+        "three_windows_coverage": 1.0
+      },
+      "start": {
+        "total": 510,
+        "all_windows_hit": 510,
+        "all_windows_coverage": 1.0,
+        "three_windows_hit": 510,
+        "three_windows_coverage": 1.0
+      }
+    },
+    "three_window_misses": []
+  },
+  "validation": {
+    "split": "validation",
+    "records": 5365,
+    "mean_windows_per_record": 1.0503261882572228,
+    "median_windows_per_record": 1.0,
+    "p95_windows_per_record": 1.0,
+    "max_windows_per_record": 44,
+    "multi_window_records": 146,
+    "records_using_three_views": 30,
+    "by_source": {
+      "bipia_benign": {
+        "records": 39,
+        "mean_windows": 1.0512820512820513,
+        "median_windows": 1.0,
+        "p95_windows": 1.1000000000000014,
+        "max_windows": 2,
+        "multi_window_records": 2
+      },
+      "bipia_indirect": {
+        "records": 263,
+        "mean_windows": 1.1596958174904943,
+        "median_windows": 1.0,
+        "p95_windows": 2.0,
+        "max_windows": 2,
+        "multi_window_records": 42
+      },
+      "direct_attacks": {
+        "records": 2897,
+        "mean_windows": 1.0365895754228511,
+        "median_windows": 1.0,
+        "p95_windows": 1.0,
+        "max_windows": 44,
+        "multi_window_records": 30
+      },
+      "dolly_hard_negative": {
+        "records": 2,
+        "mean_windows": 1.0,
+        "median_windows": 1.0,
+        "p95_windows": 1.0,
+        "max_windows": 1,
+        "multi_window_records": 0
+      },
+      "dolly_ordinary": {
+        "records": 2164,
+        "mean_windows": 1.055452865064695,
+        "median_windows": 1.0,
+        "p95_windows": 1.0,
+        "max_windows": 12,
+        "multi_window_records": 72
+      }
+    },
+    "bipia_attack_records_with_payload": 263,
+    "bipia_payload_all_window_hits": 263,
+    "bipia_payload_all_window_coverage": 1.0,
+    "bipia_payload_three_window_hits": 263,
+    "bipia_payload_three_window_coverage": 1.0,
+    "bipia_by_attack_position": {
+      "end": {
+        "total": 88,
+        "all_windows_hit": 88,
+        "all_windows_coverage": 1.0,
+        "three_windows_hit": 88,
+        "three_windows_coverage": 1.0
+      },
+      "middle": {
+        "total": 87,
+        "all_windows_hit": 87,
+        "all_windows_coverage": 1.0,
+        "three_windows_hit": 87,
+        "three_windows_coverage": 1.0
+      },
+      "start": {
+        "total": 88,
+        "all_windows_hit": 88,
+        "all_windows_coverage": 1.0,
+        "three_windows_hit": 88,
+        "three_windows_coverage": 1.0
+      }
+    },
+    "three_window_misses": []
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "total_benign_records": 1000,
+  "source_type_counts": {
+    "email": 50,
+    "source_code": 50,
+    "table": 900
+  },
+  "skipped_empty": 0,
+  "unique_normalized_texts": 712,
+  "duplicate_rows_estimate": 288,
+  "is_attack": false,
+  "split": "train"
+}

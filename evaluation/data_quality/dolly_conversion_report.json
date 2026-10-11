@@ -1,0 +1,41 @@
+{
+  "input_rows": 15011,
+  "empty_removed": 0,
+  "duplicates_removed": 203,
+  "unique_canonical_records": 14808,
+  "ordinary_benign_records": 14671,
+  "security_hard_negative_records": 137,
+  "rows_with_context": 4446,
+  "rows_without_context": 10362,
+  "category_counts_before": {
+    "brainstorming": 1766,
+    "classification": 2136,
+    "closed_qa": 1773,
+    "creative_writing": 709,
+    "general_qa": 2191,
+    "information_extraction": 1506,
+    "open_qa": 3742,
+    "summarization": 1188
+  },
+  "category_counts_after": {
+    "brainstorming": 1757,
+    "classification": 2132,
+    "closed_qa": 1759,
+    "creative_writing": 695,
+    "general_qa": 2095,
+    "information_extraction": 1501,
+    "open_qa": 3683,
+    "summarization": 1186
+  },
+  "security_term_record_counts": {
+    "access token": 1,
+    "credential": 6,
+    "execute": 20,
+    "password": 10,
+    "secret": 107,
+    "tool call": 1
+  },
+  "ordinary_output": "/Users/yashchoudhery/Projects/Accenture Hackathon Prompt protector/data/interim/dolly/dolly_benign.jsonl",
+  "hard_negative_output": "/Users/yashchoudhery/Projects/Accenture Hackathon Prompt protector/data/hard_negatives/dolly_security_hard_negatives.jsonl",
+  "split": "unassigned"
+}

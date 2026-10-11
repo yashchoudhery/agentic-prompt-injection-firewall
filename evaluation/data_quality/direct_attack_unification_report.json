@@ -1,0 +1,15 @@
+{
+  "tensor_trust_records": 908,
+  "hackaprompt_records": 18479,
+  "input_records_total": 19387,
+  "cross_dataset_overlap_groups": 0,
+  "unified_unique_records": 19387,
+  "rows_removed_by_global_dedup": 0,
+  "attack_type_counts": {
+    "instruction_override": 16286,
+    "multi_step_jailbreak": 1271,
+    "secret_extraction": 3102
+  },
+  "multi_label_records": 1272,
+  "overlap_examples": []
+}

@@ -1,0 +1,270 @@
+{
+  "model_name": "microsoft/deberta-v3-small",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "gpu_memory_gb": 94.97076416015625,
+  "precision": "pure_float32",
+  "epochs": 3,
+  "train_batch_size": 32,
+  "eval_batch_size": 64,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.06,
+  "threshold": 0.5,
+  "document_aggregation": "max_window_probability",
+  "source_weights": {
+    "bipia_indirect": 1.0,
+    "bipia_benign": 1.0,
+    "dolly_hard_negative": 1.0,
+    "direct_attacks": 1.0,
+    "dolly_ordinary": 1.0
+  },
+  "best_epoch": 3,
+  "best_bipia_f1": 0.9847328244274809,
+  "best_overall_f1": 0.9979414093428345,
+  "history": [
+    {
+      "validation_loss": 0.024448591486174235,
+      "window_metrics": {
+        "accuracy": 0.9912935323383084,
+        "precision": 0.9908731365987222,
+        "recall": 0.9942002442002442,
+        "f1": 0.9925339021788816,
+        "fpr": 0.012755102040816327,
+        "fnr": 0.0057997557997558,
+        "tn": 2322,
+        "fp": 30,
+        "fn": 19,
+        "tp": 3257,
+        "roc_auc": 0.9997992252456538,
+        "pr_auc": 0.9998566197559444
+      },
+      "document_metrics": {
+        "overall": {
+          "accuracy": 0.9960857409133271,
+          "precision": 0.9971491922711435,
+          "recall": 0.9962025316455696,
+          "f1": 0.9966756371695425,
+          "fpr": 0.004081632653061225,
+          "fnr": 0.0037974683544303796,
+          "tn": 2196,
+          "fp": 9,
+          "fn": 12,
+          "tp": 3148,
+          "roc_auc": 0.9999245098883436,
+          "pr_auc": 0.9999471190870421
+        },
+        "bipia": {
+          "accuracy": 0.9470198675496688,
+          "precision": 0.9695817490494296,
+          "recall": 0.9695817490494296,
+          "f1": 0.9695817490494296,
+          "fpr": 0.20512820512820512,
+          "fnr": 0.030418250950570342,
+          "tn": 31,
+          "fp": 8,
+          "fn": 8,
+          "tp": 255,
+          "roc_auc": 0.9657794676806084,
+          "pr_auc": 0.9947450229627252
+        },
+        "per_source": {
+          "bipia_benign": {
+            "records": 39,
+            "accuracy": 0.7948717948717948,
+            "mean_attack_probability": 0.20133878496469548,
+            "fpr": 0.20512820512820512
+          },
+          "bipia_indirect": {
+            "records": 263,
+            "accuracy": 0.9695817490494296,
+            "mean_attack_probability": 0.9549090991017122,
+            "recall": 0.9695817490494296
+          },
+          "direct_attacks": {
+            "records": 2897,
+            "accuracy": 0.9986192613047981,
+            "mean_attack_probability": 0.9981457484506264,
+            "recall": 0.9986192613047981
+          },
+          "dolly_hard_negative": {
+            "records": 2,
+            "accuracy": 1.0,
+            "mean_attack_probability": 0.00018315499255550094,
+            "fpr": 0.0
+          },
+          "dolly_ordinary": {
+            "records": 2164,
+            "accuracy": 0.9995378927911276,
+            "mean_attack_probability": 0.0005729161303708491,
+            "fpr": 0.0004621072088724584
+          }
+        }
+      },
+      "epoch": 1,
+      "training_loss": 0.10941267705257694
+    },
+    {
+      "validation_loss": 0.020578684574956183,
+      "window_metrics": {
+        "accuracy": 0.9932480454868514,
+        "precision": 0.9938987187309335,
+        "recall": 0.9945054945054945,
+        "f1": 0.9942020140372292,
+        "fpr": 0.008503401360544218,
+        "fnr": 0.005494505494505495,
+        "tn": 2332,
+        "fp": 20,
+        "fn": 18,
+        "tp": 3258,
+        "roc_auc": 0.9998850120023589,
+        "pr_auc": 0.9999179799875495
+      },
+      "document_metrics": {
+        "overall": {
+          "accuracy": 0.9968313140726934,
+          "precision": 0.9971527997469155,
+          "recall": 0.9974683544303797,
+          "f1": 0.9973105521278278,
+          "fpr": 0.004081632653061225,
+          "fnr": 0.002531645569620253,
+          "tn": 2196,
+          "fp": 9,
+          "fn": 8,
+          "tp": 3152,
+          "roc_auc": 0.9999576623898505,
+          "pr_auc": 0.9999702573863429
+        },
+        "bipia": {
+          "accuracy": 0.9668874172185431,
+          "precision": 0.9737827715355806,
+          "recall": 0.9885931558935361,
+          "f1": 0.9811320754716981,
+          "fpr": 0.1794871794871795,
+          "fnr": 0.011406844106463879,
+          "tn": 32,
+          "fp": 7,
+          "fn": 3,
+          "tp": 260,
+          "roc_auc": 0.9850833577069319,
+          "pr_auc": 0.9977436045520183
+        },
+        "per_source": {
+          "bipia_benign": {
+            "records": 39,
+            "accuracy": 0.8205128205128205,
+            "mean_attack_probability": 0.16526724289705713,
+            "fpr": 0.1794871794871795
+          },
+          "bipia_indirect": {
+            "records": 263,
+            "accuracy": 0.9885931558935361,
+            "mean_attack_probability": 0.9740038323678704,
+            "recall": 0.9885931558935361
+          },
+          "direct_attacks": {
+            "records": 2897,
+            "accuracy": 0.9982740766309975,
+            "mean_attack_probability": 0.9984807533161253,
+            "recall": 0.9982740766309975
+          },
+          "dolly_hard_negative": {
+            "records": 2,
+            "accuracy": 1.0,
+            "mean_attack_probability": 0.0001628667705517728,
+            "fpr": 0.0
+          },
+          "dolly_ordinary": {
+            "records": 2164,
+            "accuracy": 0.9990757855822551,
+            "mean_attack_probability": 0.0009009476245625227,
+            "fpr": 0.0009242144177449168
+          }
+        }
+      },
+      "epoch": 2,
+      "training_loss": 0.01140794906233718
+    },
+    {
+      "validation_loss": 0.014076433623823196,
+      "window_metrics": {
+        "accuracy": 0.994314143567875,
+        "precision": 0.9954184483811851,
+        "recall": 0.9948107448107448,
+        "f1": 0.9951145038167939,
+        "fpr": 0.006377551020408163,
+        "fnr": 0.005189255189255189,
+        "tn": 2337,
+        "fp": 15,
+        "fn": 17,
+        "tp": 3259,
+        "roc_auc": 0.9999330318207869,
+        "pr_auc": 0.9999522926557789
+      },
+      "document_metrics": {
+        "overall": {
+          "accuracy": 0.9975768872320596,
+          "precision": 0.9987321711568938,
+          "recall": 0.9971518987341772,
+          "f1": 0.9979414093428345,
+          "fpr": 0.0018140589569160999,
+          "fnr": 0.002848101265822785,
+          "tn": 2201,
+          "fp": 4,
+          "fn": 9,
+          "tp": 3151,
+          "roc_auc": 0.9999810557134247,
+          "pr_auc": 0.9999866406646771
+        },
+        "bipia": {
+          "accuracy": 0.9735099337748344,
+          "precision": 0.9885057471264368,
+          "recall": 0.9809885931558935,
+          "f1": 0.9847328244274809,
+          "fpr": 0.07692307692307693,
+          "fnr": 0.019011406844106463,
+          "tn": 36,
+          "fp": 3,
+          "fn": 5,
+          "tp": 258,
+          "roc_auc": 0.9946378083260212,
+          "pr_auc": 0.9991877463080772
+        },
+        "per_source": {
+          "bipia_benign": {
+            "records": 39,
+            "accuracy": 0.9230769230769231,
+            "mean_attack_probability": 0.07241593193574748,
+            "fpr": 0.07692307692307693
+          },
+          "bipia_indirect": {
+            "records": 263,
+            "accuracy": 0.9809885931558935,
+            "mean_attack_probability": 0.977507352243915,
+            "recall": 0.9809885931558935
+          },
+          "direct_attacks": {
+            "records": 2897,
+            "accuracy": 0.9986192613047981,
+            "mean_attack_probability": 0.998688779735669,
+            "recall": 0.9986192613047981
+          },
+          "dolly_hard_negative": {
+            "records": 2,
+            "accuracy": 1.0,
+            "mean_attack_probability": 4.9381937060388736e-05,
+            "fpr": 0.0
+          },
+          "dolly_ordinary": {
+            "records": 2164,
+            "accuracy": 0.9995378927911276,
+            "mean_attack_probability": 0.00046076561049678054,
+            "fpr": 0.0004621072088724584
+          }
+        }
+      },
+      "epoch": 3,
+      "training_loss": 0.005885402052115698
+    }
+  ],
+  "best_model_dir": "/content/colab_bundle/models/deberta_v3_small_window_v1/best"
+}

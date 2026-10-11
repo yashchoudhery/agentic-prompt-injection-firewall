@@ -1,0 +1,47 @@
+{
+  "model_name": "deberta_v3_small_window_v1",
+  "base_model": "microsoft/deberta-v3-small",
+  "task": "binary_prompt_injection_detection",
+  "threshold": 0.05,
+  "high_confidence_threshold": 0.5,
+  "max_length": 512,
+  "stride": 128,
+  "document_aggregation": "max_window_probability",
+  "precision": "float32",
+  "labels": {
+    "0": "BENIGN",
+    "1": "ATTACK"
+  },
+  "threshold_policy": {
+    "user_message": {
+      "below_0.05": "ALLOW",
+      "0.05_to_0.50": "SECURITY_REVIEW",
+      "above_or_equal_0.50": "HIGH_RISK"
+    },
+    "external_content": {
+      "below_0.70": "ALLOW",
+      "0.70_to_0.90": "SECURITY_REVIEW",
+      "above_or_equal_0.90": "HIGH_RISK"
+    }
+  },
+  "validation": {
+    "overall_precision": 0.9981024667931688,
+    "overall_recall": 0.9987341772151899,
+    "overall_f1": 0.9984182220816198,
+    "overall_fpr": 0.0027210884353741495,
+    "bipia_precision": 0.981203007518797,
+    "bipia_recall": 0.9923954372623575,
+    "bipia_f1": 0.9867674858223062,
+    "bipia_fpr": 0.1282051282051282
+  },
+  "channel_thresholds": {
+    "user_message": {
+      "review_threshold": 0.05,
+      "high_risk_threshold": 0.5
+    },
+    "external_content": {
+      "review_threshold": 0.7,
+      "high_risk_threshold": 0.9
+    }
+  }
+}

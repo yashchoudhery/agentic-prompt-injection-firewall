@@ -1,0 +1,45 @@
+{
+  "total_rows": 601757,
+  "correct_true_rows": 77936,
+  "successful_non_null_input": 77936,
+  "successful_non_empty_input": 77936,
+  "unique_successful_normalized_inputs": 18479,
+  "duplicate_successful_rows": 59457,
+  "character_length": {
+    "min": 3,
+    "median": 72.0,
+    "mean": 159.49778022993226,
+    "p95": 506.0,
+    "p99": 1293.0,
+    "max": 15726
+  },
+  "token_count": {
+    "min": 2,
+    "median": 23.0,
+    "mean": 52.5760110860193,
+    "p95": 148.0,
+    "p99": 376.0,
+    "max": 4043
+  },
+  "successful_by_level": {
+    "0": 3681,
+    "1": 10857,
+    "2": 9791,
+    "3": 9240,
+    "4": 9425,
+    "5": 8816,
+    "6": 5588,
+    "7": 7242,
+    "8": 7672,
+    "9": 5624
+  },
+  "successful_by_model": {
+    "gpt-3.5-turbo": 42370,
+    "FlanT5-XXL": 30417,
+    "text-davinci-003": 5149
+  },
+  "successful_by_dataset": {
+    "playground_data": 43295,
+    "submission_data": 34641
+  }
+}

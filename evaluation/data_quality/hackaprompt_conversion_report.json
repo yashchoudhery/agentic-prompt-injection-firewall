@@ -1,0 +1,45 @@
+{
+  "raw_rows": 601757,
+  "successful_rows_before_dedup": 77936,
+  "unique_attack_records": 18479,
+  "duplicates_collapsed": 59457,
+  "attack_type_counts": {
+    "instruction_override": 15808,
+    "multi_step_jailbreak": 1271,
+    "secret_extraction": 2672
+  },
+  "multi_label_records": 1272,
+  "level_mapping": {
+    "0": [
+      "instruction_override"
+    ],
+    "1": [
+      "instruction_override"
+    ],
+    "2": [
+      "secret_extraction"
+    ],
+    "3": [
+      "instruction_override"
+    ],
+    "4": [
+      "instruction_override"
+    ],
+    "5": [
+      "instruction_override"
+    ],
+    "6": [
+      "instruction_override",
+      "multi_step_jailbreak"
+    ],
+    "7": [
+      "instruction_override"
+    ],
+    "8": [
+      "instruction_override"
+    ],
+    "9": [
+      "instruction_override"
+    ]
+  }
+}

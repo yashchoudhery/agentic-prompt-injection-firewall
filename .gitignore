@@ -1,47 +1,100 @@
+# ============================================================
 # Python
+# ============================================================
 __pycache__/
 *.py[cod]
 *.so
 venv/
 .venv/
+env/
 
-# Environment variables
+# ============================================================
+# Environment / secrets
+# ============================================================
 .env
 .env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
 
-# IDE
+# ============================================================
+# IDE / OS
+# ============================================================
 .vscode/
 .idea/
-
-# OS
 .DS_Store
 
-# Models
-models/**/*.bin
-models/**/*.pt
-models/**/*.pth
-models/**/*.safetensors
-models/**/*.onnx
-
-# Raw/processed datasets
+# ============================================================
+# DATASETS - NEVER PUSH DATA
+# Keep schemas and directory placeholders
+# ============================================================
 data/raw/*
-data/interim/*
-data/processed/*
-data/synthetic/*
-data/external/*
-
-# Keep folder placeholders
 !data/raw/.gitkeep
+
+data/interim/*
 !data/interim/.gitkeep
+
+data/processed/*
 !data/processed/.gitkeep
+
+data/synthetic/*
 !data/synthetic/.gitkeep
+
+data/external/*
 !data/external/.gitkeep
 
-# Logs
-*.log
-logs/
+data/hard_negatives/*
 
-# Cache
+# Old schema backup not needed in repo
+data/schemas/*_backup.json
+
+# ============================================================
+# TRAINED MODELS - NEVER PUSH
+# ============================================================
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.gguf
+
+# ============================================================
+# Colab / transfer artifacts
+# ============================================================
+colab_bundle/
+colab_deberta_bundle.zip
+deberta_v3_small_best.zip
+deberta_training_evidence.zip
+final_deberta_bundle.zip
+
+# Local Colab notebooks / duplicates
+dbert_train.ipynb
+dbert_train\ \(1\).ipynb
+
+# ============================================================
+# Large generated evaluation artifacts
+# ============================================================
+evaluation/**/validation_document_scores.jsonl
+
+# ============================================================
+# Logs / caches / temporary
+# ============================================================
+logs/
+*.log
 .cache/
 huggingface/
 hf_cache/
+.pytest_cache/
+.coverage
+tmp/
+temp/
+*.tmp
+
+# Local backup / evaluation sample records
+src/api/firewall_api_before_tool_gateway.py
+evaluation/data_quality/global_exact_conflicts.jsonl
+evaluation/data_quality/global_near_conflicts.jsonl

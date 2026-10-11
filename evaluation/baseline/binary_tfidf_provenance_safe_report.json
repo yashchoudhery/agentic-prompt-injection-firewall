@@ -1,0 +1,179 @@
+{
+  "model": "tfidf_provenance_safe_v1",
+  "allowed_input_fields": [
+    "source_type",
+    "user_instruction",
+    "external_content",
+    "text"
+  ],
+  "explicitly_excluded_fields": [
+    "directness",
+    "encoding_type",
+    "attack_payload",
+    "poisoned_content",
+    "attack_position",
+    "attack_types",
+    "severity"
+  ],
+  "overall_threshold_results": [
+    {
+      "threshold": 0.1,
+      "precision": 0.9828926905132193,
+      "recall": 1.0,
+      "f1": 0.9913725490196078,
+      "fpr": 0.024943310657596373,
+      "tn": 2150,
+      "fp": 55,
+      "fn": 0,
+      "tp": 3160
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.9883793969849246,
+      "recall": 0.9958860759493671,
+      "f1": 0.9921185372005045,
+      "fpr": 0.016780045351473923,
+      "tn": 2168,
+      "fp": 37,
+      "fn": 13,
+      "tp": 3147
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.9911223842739378,
+      "recall": 0.989240506329114,
+      "f1": 0.9901805511561609,
+      "fpr": 0.012698412698412698,
+      "tn": 2177,
+      "fp": 28,
+      "fn": 34,
+      "tp": 3126
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.995164410058027,
+      "recall": 0.9768987341772152,
+      "f1": 0.9859469817949537,
+      "fpr": 0.006802721088435374,
+      "tn": 2190,
+      "fp": 15,
+      "fn": 73,
+      "tp": 3087
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.9957764782326186,
+      "recall": 0.9699367088607594,
+      "f1": 0.9826867585764668,
+      "fpr": 0.0058956916099773245,
+      "tn": 2192,
+      "fp": 13,
+      "fn": 95,
+      "tp": 3065
+    }
+  ],
+  "bipia_threshold_results": [
+    {
+      "threshold": 0.1,
+      "precision": 0.8737541528239202,
+      "recall": 1.0,
+      "f1": 0.9326241134751773,
+      "fpr": 0.9743589743589743,
+      "tn": 1,
+      "fp": 38,
+      "fn": 0,
+      "tp": 263
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.8776223776223776,
+      "recall": 0.9543726235741445,
+      "f1": 0.9143897996357013,
+      "fpr": 0.8974358974358975,
+      "tn": 4,
+      "fp": 35,
+      "fn": 12,
+      "tp": 251
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.8984375,
+      "recall": 0.8745247148288974,
+      "f1": 0.8863198458574181,
+      "fpr": 0.6666666666666666,
+      "tn": 13,
+      "fp": 26,
+      "fn": 33,
+      "tp": 230
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.9271844660194175,
+      "recall": 0.7262357414448669,
+      "f1": 0.814498933901919,
+      "fpr": 0.38461538461538464,
+      "tn": 24,
+      "fp": 15,
+      "fn": 72,
+      "tp": 191
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.9289617486338798,
+      "recall": 0.6463878326996197,
+      "f1": 0.7623318385650224,
+      "fpr": 0.3333333333333333,
+      "tn": 26,
+      "fp": 13,
+      "fn": 93,
+      "tp": 170
+    }
+  ],
+  "metrics_at_0_50": {
+    "accuracy": 0.9798695246971109,
+    "precision": 0.9957764782326186,
+    "recall": 0.9699367088607594,
+    "f1": 0.9826867585764668,
+    "roc_auc": 0.9995472028473837,
+    "pr_auc": 0.9996801424427291
+  },
+  "per_source_at_0_50": {
+    "bipia_benign": {
+      "records": 39,
+      "accuracy": 0.6666666666666666,
+      "recall": null,
+      "fpr": 0.3333333333333333,
+      "mean_attack_probability": 0.45106024096532504
+    },
+    "bipia_indirect": {
+      "records": 263,
+      "accuracy": 0.6463878326996197,
+      "recall": 0.6463878326996197,
+      "fpr": null,
+      "mean_attack_probability": 0.6774034467910816
+    },
+    "direct_attacks": {
+      "records": 2897,
+      "accuracy": 0.9993096306523991,
+      "recall": 0.9993096306523991,
+      "fpr": null,
+      "mean_attack_probability": 0.9921000909193541
+    },
+    "dolly_hard_negative": {
+      "records": 2,
+      "accuracy": 1.0,
+      "recall": null,
+      "fpr": 0.0,
+      "mean_attack_probability": 0.024568076431706932
+    },
+    "dolly_ordinary": {
+      "records": 2164,
+      "accuracy": 1.0,
+      "recall": null,
+      "fpr": 0.0,
+      "mean_attack_probability": 0.012148381324784466
+    }
+  },
+  "feature_count": 320000,
+  "model_file": "/Users/yashchoudhery/Projects/Accenture Hackathon Prompt protector/models/baseline_tfidf_provenance_safe/binary_tfidf_provenance_safe.joblib"
+}

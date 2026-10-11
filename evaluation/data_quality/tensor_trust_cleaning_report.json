@@ -1,0 +1,18 @@
+{
+  "input_records": 1346,
+  "empty_records_removed": 0,
+  "duplicate_groups": 303,
+  "duplicate_rows_removed": 438,
+  "output_unique_records": 908,
+  "attack_type_counts": {
+    "instruction_override": 478,
+    "secret_extraction": 430
+  },
+  "length_flags": {
+    "greater_than_2000_chars": 14,
+    "greater_than_4000_chars": 1,
+    "maximum_chars": 4800
+  },
+  "input_file": "/Users/yashchoudhery/Projects/Accenture Hackathon Prompt protector/data/interim/tensor_trust/tensor_trust_curated_attacks.jsonl",
+  "output_file": "/Users/yashchoudhery/Projects/Accenture Hackathon Prompt protector/data/interim/tensor_trust/tensor_trust_cleaned.jsonl"
+}

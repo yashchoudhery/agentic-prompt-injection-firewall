@@ -1,0 +1,27 @@
+{
+  "semantic_cases": 1054,
+  "detector_variant_records": 2108,
+  "semantic_direct_harm_cases": 510,
+  "semantic_data_stealing_cases": 544,
+  "variant_counts": {
+    "base": 1054,
+    "enhanced": 1054
+  },
+  "variant_family_counts": {
+    "data_stealing": 1088,
+    "direct_harm": 1020
+  },
+  "attack_type_counts_across_variants": {
+    "credential_theft": 68,
+    "indirect_prompt_injection": 2108,
+    "instruction_override": 1054,
+    "secret_extraction": 1088,
+    "tool_abuse": 2108
+  },
+  "credential_semantic_cases": 34,
+  "credential_variant_records": 68,
+  "unique_user_tools": 17,
+  "unique_attacker_tools": 63,
+  "training_usage": false,
+  "split": "external_test"
+}
