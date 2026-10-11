@@ -98,3 +98,6 @@ temp/
 src/api/firewall_api_before_tool_gateway.py
 evaluation/data_quality/global_exact_conflicts.jsonl
 evaluation/data_quality/global_near_conflicts.jsonl
+
+# Temporary benchmark smoke tests
+evaluation/external/external_attack_benchmark_smoke_*.json
